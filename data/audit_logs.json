@@ -1,0 +1,2130 @@
+[
+  {
+    "id": "aud-stvqhp8",
+    "assessmentId": "asm-mfnzbet",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:06:26.800Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-4uv9kn4",
+    "assessmentId": "asm-qbwpnxd",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:05.221Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-abixvj0",
+    "assessmentId": "asm-lc74rvx",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.992Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-umx9r2a",
+    "assessmentId": "asm-6cv8m5f",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.831Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-315yc2s",
+    "assessmentId": "asm-ea0kuya",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.664Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-n0urpw6",
+    "assessmentId": "asm-apftz5p",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.509Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-56kh6a8",
+    "assessmentId": "asm-qxhy54t",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.345Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-u22x721",
+    "assessmentId": "asm-kya75dp",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.173Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-6littwz",
+    "assessmentId": "asm-b8e90ro",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:04.019Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-azl51bg",
+    "assessmentId": "asm-imlon33",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:03.753Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-6rkwf6f",
+    "assessmentId": "asm-puyt0ow",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:03.529Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-cqizft7",
+    "assessmentId": "asm-2q2i0tt",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T13:00:01.308Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-p1i3tup",
+    "assessmentId": "asm-zl1a17z",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T12:59:59.392Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  },
+  {
+    "id": "aud-6deflmn",
+    "assessmentId": "asm-cpuined",
+    "systemId": "sys-talentscan-pro",
+    "systemName": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "userEmail": "compliance.lead@acmeglobal.com",
+    "evaluatedAt": "2026-09-16T12:58:51.418Z",
+    "rulebookVersion": "2026.2-FINAL",
+    "rulesEvaluatedCount": 13,
+    "rulesTriggeredCount": 6,
+    "ruleEvaluations": [
+      {
+        "ruleId": "EU-AIA-ART5-1D-BIOMETRIC-SENSITIVE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 5(1)(d)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2025-02-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4A-HIRING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-4B-WORKFORCE-EVAL",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 4(b)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.affectsLegalOrMaterialRights is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5A-CREDIT-SCORING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(a)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART6-ANNEX3-5C-HEALTHCARE-TRIAGE",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 6(2) and Annex III, Point 5(c)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-1-CHATBOT-TRANSPARENCY",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(1)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE",
+          "system_profile.interactsWithHumansDirectly is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "EU-AIA-ART50-2-GENAI-WATERMARKING",
+        "regulatorySource": "Regulation (EU) 2024/1689, Article 50(2) & 50(4)",
+        "sourceVersion": "Official Journal L 2024/1689",
+        "effectiveDate": "2026-08-02",
+        "triggeringFacts": [
+          "geographic_scope.isEUDeployed is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-CO-SB205-CONSEQUENTIAL-DECISIONS",
+        "regulatorySource": "Colorado Revised Statutes § 6-1-1701 et seq. (SB 24-205)",
+        "sourceVersion": "Enacted 2024 / Effective Feb 1, 2026",
+        "effectiveDate": "2026-02-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CO\"",
+          "decision_impact.isConsequentialDecision is TRUE",
+          "regulated_sectors includes sector/location matching \"employment\""
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-NYC-LL144-AEDT-BIAS-AUDIT",
+        "regulatorySource": "NYC Administrative Code § 20-870 through 20-874, 6 RCNY § 5-300 et seq.",
+        "sourceVersion": "Final Rules Effective July 5, 2023",
+        "effectiveDate": "2023-07-05",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"NYC\"",
+          "regulated_sectors includes sector/location matching \"employment\"",
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      },
+      {
+        "ruleId": "US-CA-AB2013-TRAINING-TRANSPARENCY",
+        "regulatorySource": "California Civil Code § 1798.500 et seq. (AB 2013)",
+        "sourceVersion": "Enacted 2024 / Operative Jan 1, 2026",
+        "effectiveDate": "2026-01-01",
+        "triggeringFacts": [
+          "geographic_scope.deployedUSStates includes sector/location matching \"CA\""
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FED-OMB-M24-10-FEDERAL-USE",
+        "regulatorySource": "White House OMB Memorandum M-24-10 (Advancing Governance, Innovation, and Risk Management for Agency Use of AI)",
+        "sourceVersion": "OMB M-24-10 (March 2024 / Ongoing)",
+        "effectiveDate": "2024-12-01",
+        "triggeringFacts": [],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "US-FTC-ACT-SECTION5-FAIRNESS",
+        "regulatorySource": "Federal Trade Commission Act, 15 U.S.C. § 45(a)",
+        "sourceVersion": "FTC AI Enforcement Guidance 2023-2025",
+        "effectiveDate": "2023-01-01",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "NOT_TRIGGERED"
+      },
+      {
+        "ruleId": "NIST-AI-RMF-100-1-CORE-GOVERNANCE",
+        "regulatorySource": "NIST Special Publication 1270 / NIST AI 100-1",
+        "sourceVersion": "NIST AI RMF 1.0",
+        "effectiveDate": "2023-01-26",
+        "triggeringFacts": [
+          "decision_impact.isConsequentialDecision is TRUE"
+        ],
+        "result": "TRIGGERED"
+      }
+    ],
+    "deterministicHash": "f583f5fcd9c433906bcfbfafe7d400f835711b15f5cac6d48461bcdc4b112558"
+  }
+]

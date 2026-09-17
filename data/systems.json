@@ -1,0 +1,88 @@
+[
+  {
+    "id": "sys-talentscan-pro",
+    "name": "TalentScan Automated Candidate Ranker",
+    "organizationId": "org-acme-corp",
+    "status": "Conflict Detected",
+    "rawAnswers": {
+      "systemName": "TalentScan Automated Candidate Ranker",
+      "whatItDoes": "Automated candidate resume parsing, skill matching, and video interview semantic scoring for hiring pipelines.",
+      "intendedPurpose": "Screen incoming applicant resumes and rank candidates for job interviews in corporate engineering and sales roles.",
+      "industry": "Human Resources / Employment",
+      "deploymentLocations": "European Union (Germany, France), United States (Colorado, New York City, California)",
+      "whoUsesIt": "Corporate hiring managers and HR talent acquisition teams.",
+      "whoIsAffected": "Job applicants and internal promotion candidates.",
+      "makesDecisionsAboutPeople": true,
+      "processesPersonalData": true,
+      "processesSensitiveData": false,
+      "affectedRegulatedAreas": [
+        "employment",
+        "recruitment",
+        "workforce_management"
+      ],
+      "humanOversightDegree": "on-the-loop",
+      "modelProvider": "Fine-tuned Transformer on proprietary historical hiring records",
+      "decisionsAutomated": true
+    },
+    "extractedFacts": {
+      "system_profile": {
+        "name": "TalentScan Automated Candidate Ranker",
+        "description": "Automated candidate resume parsing, skill matching, and video interview semantic scoring for hiring pipelines.",
+        "intendedPurpose": "Screen incoming applicant resumes and rank candidates for job interviews in corporate engineering and sales roles.",
+        "industry": "Human Resources / Employment",
+        "modelProvider": "Fine-tuned Transformer on proprietary historical hiring records",
+        "isGenerativeAI": false,
+        "interactsWithHumansDirectly": true
+      },
+      "geographic_scope": {
+        "isEUDeployed": true,
+        "deployedUSStates": [
+          "CO",
+          "NYC",
+          "NY",
+          "CA"
+        ],
+        "isFederalGovContract": false,
+        "isGlobal": false
+      },
+      "decision_impact": {
+        "affectsLegalOrMaterialRights": true,
+        "isConsequentialDecision": true,
+        "makesDecisionsAboutPeople": true,
+        "targetPopulations": [
+          "Job applicants and internal promotion candidates."
+        ],
+        "automatedDecisionLevel": "human_veto_available"
+      },
+      "data_processing": {
+        "processesPersonalData": true,
+        "processesBiometrics": false,
+        "processesSpecialCategoryData": false,
+        "trainingDataTransparencyNeeded": false,
+        "dataCategories": [
+          "Personal Data"
+        ]
+      },
+      "regulated_sectors": [
+        "employment",
+        "recruitment"
+      ],
+      "oversight_profile": {
+        "oversightLevel": "on-the-loop",
+        "hasKillSwitch": true,
+        "canIntervene": true
+      },
+      "extractionMetadata": {
+        "extractedAt": "2026-09-16T12:58:51.416Z",
+        "extractionMethod": "deterministic-fallback",
+        "confidenceScore": 0.88,
+        "notes": "Extracted via deterministic fallback parser."
+      }
+    },
+    "latestAssessmentId": "asm-mfnzbet",
+    "latestAssessmentDate": "2026-09-16T13:06:26.800Z",
+    "riskTier": "High Risk",
+    "createdAt": "2026-09-16T12:58:51.419Z",
+    "updatedAt": "2026-09-16T13:06:26.808Z"
+  }
+]
