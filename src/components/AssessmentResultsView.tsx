@@ -279,7 +279,7 @@ export const AssessmentResultsView: React.FC<AssessmentResultsViewProps> = ({
             { id: "overview", label: "Overview & Classifications" },
             {
               id: "tips",
-              label: `💡 Tips to Solve Problems (${
+              label: `Tips to Solve Problems (${
                 (currentAssessment.missingEvidenceList?.length || 0) +
                 (currentAssessment.conflictAlerts?.length || 0) +
                 2

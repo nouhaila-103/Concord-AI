@@ -624,7 +624,7 @@ ${t.checklistItems.map((chk) => `  - [ ] ${chk}`).join("\n")}
                 <div className="space-y-2 bg-emerald-50/40 p-4 rounded-xl border border-emerald-200">
                   <div className="flex items-center space-x-1.5 text-xs font-bold text-emerald-900">
                     <Lightbulb className="w-4 h-4 text-emerald-600" />
-                    <span>💡 Actionable How-To & Best Practices</span>
+                    <span>Actionable How-To & Best Practices</span>
                   </div>
 
                   <ul className="space-y-1.5 text-xs text-slate-800">
